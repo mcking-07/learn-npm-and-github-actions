@@ -19,13 +19,14 @@
     "username": "mcking-07",
     "url": "https://github.com/mcking-07"
   },
-  "keywords": ["github-actions", "npm"],
+  "keywords": ["changesets", "github-actions", "npm"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mcking-07/learn-npm-and-github-actions/issues"
   },
   "homepage": "https://github.com/mcking-07/learn-npm-and-github-actions#readme",
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "terser": "^5.30.3",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"

@@ -1,0 +1,33 @@
+{
+  "name": "learn-npm-and-github-actions",
+  "version": "0.0.0",
+  "description": "a simple repository to learn how to set up a workflow to publish on npm, using github actions.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "lint": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcking-07/learn-npm-and-github-actions.git"
+  },
+  "author": {
+    "name": "Mohammed Muzammil Anwar",
+    "email": "mohammed.muzammil100@gmail.com",
+    "username": "mcking-07",
+    "url": "https://github.com/mcking-07"
+  },
+  "keywords": ["github-actions", "npm"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcking-07/learn-npm-and-github-actions/issues"
+  },
+  "homepage": "https://github.com/mcking-07/learn-npm-and-github-actions#readme",
+  "devDependencies": {
+    "terser": "^5.30.3",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}

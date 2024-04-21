@@ -1,0 +1,27 @@
+# src files
+src
+
+# env variables
+.env
+
+# git files
+.git
+.gitignore
+.github
+
+# changesets
+.changeset
+.changesets
+
+# node_modules
+node_modules
+
+# npm files
+.nvmrc
+package-lock.json
+npm-shrinkwrap.json
+
+# typescript configs
+tsconfig.json
+tsconfig.tsbuildinfo
+tsup.config.ts

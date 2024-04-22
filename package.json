@@ -1,6 +1,6 @@
 {
   "name": "learn-npm-and-github-actions",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "a simple repository to learn how to set up a workflow to publish on npm, using github actions.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

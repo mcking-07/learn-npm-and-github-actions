@@ -1,5 +1,11 @@
 # learn-npm-and-github-actions
 
+## 0.4.0
+
+### Minor Changes
+
+- 8fae22b: re-re-reimplement learnings
+
 ## 0.3.0
 
 ### Minor Changes

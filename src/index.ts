@@ -1,3 +1,5 @@
-const learnings = () => `npm, changesets and github-actions`;
+function learnings() {
+  return `npm, changesets and github-actions`;
+}
 
 export { learnings };

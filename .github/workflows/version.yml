@@ -29,6 +29,9 @@ jobs:
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
 
+      - name: checkout current branch
+        run: git checkout $GITHUB_HEAD_REF
+
       - name: commit changeset
         run: |
           git add . && git commit -m "chore: update changeset" && git push origin $GITHUB_HEAD_REF

@@ -1,0 +1,41 @@
+---
+name: version
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: npm
+
+      - name: install dependencies
+        run: npm ci
+
+      - name: run changesets
+        run: npx changeset version
+
+      - name: add git config
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+
+      - name: checkout current branch
+        run: git checkout $GITHUB_HEAD_REF
+
+      - name: commit changeset
+        run: |
+          git add . && git commit -m "chore: update changeset" && git push origin $GITHUB_HEAD_REF

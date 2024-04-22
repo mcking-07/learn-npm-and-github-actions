@@ -1,0 +1,29 @@
+---
+name: version
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: npm
+
+      - name: install dependencies
+        run: npm ci
+
+      - name: run changesets
+        run: npx changeset version
+
+      - name: commit changeset
+        run: |
+          git add . && git commit -m "chore: update changeset" && git push

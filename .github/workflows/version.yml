@@ -31,4 +31,4 @@ jobs:
 
       - name: commit changeset
         run: |
-          git add . && git commit -m "chore: update changeset" && git push
+          git add . && git commit -m "chore: update changeset" && git push origin $GITHUB_HEAD_REF

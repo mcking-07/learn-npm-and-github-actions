@@ -10,7 +10,7 @@
     "lint": "tsc",
     "ci": "npm run lint && npm run build",
     "publish": "changeset publish",
-    "release": "npm run ci && npm publish"
+    "release": "npm run ci && npm run publish"
   },
   "repository": {
     "type": "git",

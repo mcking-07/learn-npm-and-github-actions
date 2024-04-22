@@ -1,5 +1,11 @@
 # learn-npm-and-github-actions
 
+## 0.5.0
+
+### Minor Changes
+
+- f17889d: re-re-re-reimplement learnings
+
 ## 0.4.0
 
 ### Minor Changes

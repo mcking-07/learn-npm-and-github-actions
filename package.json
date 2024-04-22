@@ -1,6 +1,6 @@
 {
   "name": "learn-npm-and-github-actions",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "a simple repository to learn how to set up a workflow to publish on npm, using github actions.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -22,7 +22,11 @@
     "username": "mcking-07",
     "url": "https://github.com/mcking-07"
   },
-  "keywords": ["changesets", "github-actions", "npm"],
+  "keywords": [
+    "changesets",
+    "github-actions",
+    "npm"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mcking-07/learn-npm-and-github-actions/issues"

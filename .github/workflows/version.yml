@@ -24,6 +24,11 @@ jobs:
       - name: run changesets
         run: npx changeset version
 
+      - name: add git config
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+
       - name: commit changeset
         run: |
           git add . && git commit -m "chore: update changeset" && git push
